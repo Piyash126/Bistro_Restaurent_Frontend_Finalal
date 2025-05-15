@@ -2,7 +2,7 @@ import {
     createBrowserRouter
 } from "react-router-dom";
 import Main from "../layout/Main";
-import Home from "../pages/home/HOme";
+import Home from "../pages/home/Home";
 import Menu from "../pages/menu/Menu";
 import Order from "../pages/order/order/Order";
 import Login from "../pages/login/Login";
@@ -90,7 +90,7 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/updateItem/:id',
                 element: <AdminRoutes><UpdateItem></UpdateItem></AdminRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`)
+                loader: ({ params }) => fetch(`${process.env.VITE_BaseURL_KEY}/menu/${params.id}`)
             },
             {
                 path: '/dashboard/manageItems',
