@@ -90,7 +90,7 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/updateItem/:id',
                 element: <AdminRoutes><UpdateItem></UpdateItem></AdminRoutes>,
-                loader: ({ params }) => fetch(`${process.env.VITE_BaseURL_KEY}/menu/${params.id}`)
+                loader: ({ params }) => fetch(`${import.meta.env.VITE_BaseURL_KEY}/menu/${params.id}`)
             },
             {
                 path: '/dashboard/manageItems',

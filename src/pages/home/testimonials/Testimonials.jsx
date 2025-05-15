@@ -17,7 +17,7 @@ import { FaColonSign } from 'react-icons/fa6';
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch(`${process.env.VITE_BaseURL_KEY}/reviews`)
+        fetch(`${import.meta.env.VITE_BaseURL_KEY}/reviews`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
