@@ -15,7 +15,7 @@ import AllUsers from "../pages/dashboard/allusers/AllUsers";
 import AddItems from "../pages/dashboard/additems/AddItems";
 import AdminRoutes from "./AdminRoutes";
 import ManageItems from "../pages/dashboard/manageItems/ManageItems";
-import UpdateItem from "../pages/dashboard/updateitem/updateItem";
+import UpdateItem from "../pages/dashboard/updateitem/UpdateItem";
 import Payment from "../pages/dashboard/payment/Payment";
 import PaymentHistory from "../layout/dashboard/paymentHistory/PaymentHistory";
 import UserHome from "../pages/dashboard/userHome/UserHome";
